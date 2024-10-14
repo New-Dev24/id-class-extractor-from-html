@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Id and Class Extractor from HTML</title>
+  <meta name="description" content="Extract id and class your Html file to speed up your JavaScript devlopement">
+  <link rel="stylesheet" href="style.css">
+  <style></style>
+</head>
+<body>
+  <div id="documentationTab">
+    <h2>Documentation</h2>
+    <div>
+    <p><strong>Overview:</strong></p>
+    <p>This Software/ App is able to extracts Id and Class from from html document.
+      You can select file manually, drag and drop a file or you can simply paste your
+      code in the paste area and click proced. It takes a little time to do the task.
+    </p>
+    </div>
+    <div>
+      <p><strong>Use of this App</strong></p>
+      <p>This app is intented to give benefit to frontend devlopers. Mostly who uses HTML and JavaScript
+        to build their applicaation. This app will save their time by automatically extracting 
+        id's under :> document.getElementById("id"); and class under :> document.querySelector(".class");
+      </p>
+    </div>
+    <div>
+      <p><strong>How does this app work?</strong></p>
+      <p>You upload your desired file and choose whether you want the id's or class'es only.
+        Then it process it's function and in the output section it prints the result.
+      </p>
+    </div>
+    <div>
+      <p><strong>Does this app collect, log or store data?</strong></p>
+      <p>NO. This app doesn't collect, store or log any user input.</p>
+    </div>
+    <div>
+      <p><strong>Is there any scope of developing this app further?</strong></p>
+      <p>Yes. If you're someone who can make extension for offline/online code editor like "VS Code" and
+        for similar platform, then you're welcome to work on this.</p>
+    </div>
+    <div>
+      <p><strong>Where I can see the source code for this?</strong></p>
+      <p>To see the source code for this application visit <a href="#" target="_blank">Github</a>.</p>
+    </div>
+  </div>
+
+  <div id="mainContent">
+    <h1>Id and Class Extractor from HTML</h1>
+
+    <div id="dropArea">
+      <p>Drag and drop a file here, or click to select a file.</p>
+      <input type="file" id="fileInput">
+    </div>
+
+    <div class="options">
+      <p><strong>Select an option:</strong></p>
+      <input type="radio" id="idsOnly" name="filterOption" value="idsOnly">
+      <label for="idsOnly">I want id's only</label><br>
+      <input type="radio" id="classesOnly" name="filterOption" value="classesOnly">
+      <label for="classesOnly">I want classes only</label>
+    </div>
+
+    <div id="pasteArea">
+      <p>Or paste your HTML content here:</p>
+      <textarea id="htmlTextarea" placeholder="Paste HTML content here..."></textarea>
+      <button id="processButton">Process Pasted Content</button>
+    </div>
+
+    <div id="preview">
+      <button id="closeButton">Close Preview</button>
+      <p>Select a file or paste HTML content to preview the output.</p>
+    </div>
+
+    <div id="countInfo">
+      <p id="idCount">IDs found: 0</p>
+      <p id="classCount">Classes found: 0</p>
+    </div>
+
+    <!-- Modal -->
+    <div id="processingModal" class="modal">
+      <div class="modal-content">
+        <p>Please wait while your file is being processed!</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
