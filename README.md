@@ -1,3 +1,4 @@
+![](https://github.com/New-Dev24/id-class-extractor-from-html/blob/2447431fbbf31f597d79fcb472e0147005656e6b/image/home-page-of-id-class-extractor-from-html.PNG)
 # id-class-extractor-from-html intro:
 
 As I'm learning to code, I found out that sometimes if your project is long enough it's not so easy to remember or keep track of every "class" and "id's" you add to your code. 
